@@ -36,22 +36,30 @@ var orm = {
     });
   },
   insertOne: function(table, cols, vals, cb) {
-    connection.query("INSERT INTO ?? (??) VALUES (?);", [table, cols, vals], function(err, result) {
-      if (err) {
-        throw err;
+    connection.query(
+      "INSERT INTO ?? (??) VALUES (?);",
+      [table, cols, vals],
+      function(err, result) {
+        if (err) {
+          throw err;
+        }
+        cb(result);
       }
-      cb(result);
-    });
+    );
   },
   // An example of objColVals would be {name: panther, sleepy: true}
   updateOne: function(table, objColVals, condition, cb) {
-    connection.query("UPDATE ?? SET ? WHERE ?;", [table, objColVals, condition], function(err, result) {
-      if (err) {
-        throw err;
-      }
+    connection.query(
+      "UPDATE ?? SET ? WHERE ?;",
+      [table, objColVals, condition],
+      function(err, result) {
+        if (err) {
+          throw err;
+        }
 
-      cb(result);
-    });
+        cb(result);
+      }
+    );
   }
 };
 

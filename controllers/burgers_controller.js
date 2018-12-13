@@ -17,8 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-  burger.insertOne("burger_name",
-    req.body.name, function() {
+  burger.insertOne("burger_name", req.body.name, function() {
     res.redirect("/");
   });
 });
@@ -26,13 +25,16 @@ router.post("/", function(req, res) {
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  burger.updateOne({
-    devoured: true
-  }, {id: req.params.id}, function() {
-    res.redirect("/");
-  });
+  burger.updateOne(
+    {
+      devoured: true
+    },
+    { id: req.params.id },
+    function() {
+      res.redirect("/");
+    }
+  );
 });
-
 
 // Export routes for server.js to use.
 module.exports = router;
