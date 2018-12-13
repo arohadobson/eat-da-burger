@@ -20,8 +20,8 @@ Whenever a user submits a burger's name, your app will display the burger on the
 
 ## Deployed Site
 
-[Eat-Da-Burger! website](https://damp-meadow-12275.herokuapp.com/)
+[Eat-Da-Burger!](https://damp-meadow-12275.herokuapp.com/)
 
 ## Gifs
 
-![Eat-Da-Burger runthrough](http://www.giphy.com/gifs/SJ1baKp2mRuzFRq9IO)
+![Eat-Da-Burger runthrough](https://media.giphy.com/media/w9d4CnfGCtRnm6k3QW/giphy.gif)
