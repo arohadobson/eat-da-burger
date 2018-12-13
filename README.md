@@ -24,4 +24,4 @@ Whenever a user submits a burger's name, your app will display the burger on the
 
 ## Gifs
 
-![Eat-Da-Burger runthrough](https://media.giphy.com/media/w9d4CnfGCtRnm6k3QW/giphy.gif)
+![Eat-Da-Burger runthrough](https://media.giphy.com/media/55s2yU1XA48lOSYD7r/giphy.gif)
